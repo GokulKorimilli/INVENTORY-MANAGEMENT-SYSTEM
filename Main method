@@ -12,6 +12,7 @@ public class Package_Demo {
 		else {
             System.out.println("Array is full!");
         }
+		System.out.println("Added SuccessFully!!");
 	}
 public static void display(Product p[]) {
 
@@ -62,17 +63,17 @@ public static void delete(int id) {
 
 
 	public static void main(String[] args) {
-		
+		System.out.println("Adding of Inventory");
 		Add(101, "Box", 5, 25.50);
         Add(102, "Bag", 10, 12.75);
-		
+		System.out.println("Display");
         
         	display(p);
         	
         	update(101,"Bat",3,200.00);
         	
         	delete(102);
-        	
+        	System.out.println("Display");
         	display(p);
 	}
 
